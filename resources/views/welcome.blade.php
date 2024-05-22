@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <script src="{{ asset('js/javascript.js') }}"></script>
+    <title>@lang("languages.title")</title>
     <link rel="stylesheet" href="{{ asset('css/desktop.css') }}" media="screen and (min-width: 769px)">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="screen and (max-width: 768px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,11 +28,11 @@
                     </div>
 
                 </div>
-                <p id="description">We are an economic and career network whose members support and promote each other. It is based on a reward system. The more you help the network, the more it helps you. Register for free</p>
+                <p id="description">@lang("languages.description")</p>
             </div>
             <div class="buttons">
-                <button class="blue-button" onclick="window.location.href='login'">Login</button>
-                <button class="blue-button" onclick="window.location.href='register'">Register</button>
+                <button class="blue-button" onclick="window.location.href='login'">@lang("languages.buttons.login")</button>
+                <button class="blue-button" onclick="window.location.href='register'">@lang("languages.buttons.register")</button>
             </div>
 
             <div class="design-line"></div>
@@ -43,15 +42,17 @@
             <div class="footer">
                 <div class="language-select">
                     <select onchange="changeLanguage(this)">
-                        <option value="en">English</option>
-                        <option value="de">Deutsch</option>
+                        <option value="en" <?=(Session::get('setLanguage') == 'en'?'selected':'')?> >English</option>
+                        <option value="de" <?=(Session::get('setLanguage') == 'de'?'selected':'')?> >Deutsch</option>
                     </select>
                 </div>
                 <div class="legal-text">
-                <p><a href="legal">Legal Information</a></p></div>
+                <p><a href="legal">@lang("languages.labels.legal_information")</a></p></div>
             </div>
 
         </div>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="{{ asset('js/javascript.js') }}"></script>
 </html>
