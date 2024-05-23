@@ -14,5 +14,79 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    if (Session::has('setLanguage')){
+        App::setLocale(Session::get('setLanguage'));
+    }else{
+        App::setLocale('en');
+    }
     return view('welcome');
+});
+
+Route::get('/login', function () {
+    if (Session::has('setLanguage')){
+        App::setLocale(Session::get('setLanguage'));
+    }else{
+        App::setLocale('en');
+    }
+    return view('login');
+});
+
+Route::get('/register', function () {
+    if (Session::has('setLanguage')){
+        App::setLocale(Session::get('setLanguage'));
+    }else{
+        App::setLocale('en');
+    }
+    return view('register');
+});
+
+Route::get('/user/home', function () {
+    if (Session::has('setLanguage')){
+        App::setLocale(Session::get('setLanguage'));
+    }else{
+        App::setLocale('en');
+    }
+    return view('/users/home');
+});
+
+Route::get('/user/regin', function () {
+    if (Session::has('setLanguage')){
+        App::setLocale(Session::get('setLanguage'));
+    }else{
+        App::setLocale('en');
+    }
+    return view('/users/regin');
+});
+
+Route::get('/admin/home', function () {
+    if (Session::has('setLanguage')){
+        App::setLocale(Session::get('setLanguage'));
+    }else{
+        App::setLocale('en');
+    }
+    return view('/admin/home');
+});
+
+Route::get('/admin/messenger', function () {
+    if (Session::has('setLanguage')){
+        App::setLocale(Session::get('setLanguage'));
+    }else{
+        App::setLocale('en');
+    }
+    return view('/admin/messenger');
+});
+
+Route::get('/legal', function () {
+    if (Session::has('setLanguage')){
+        App::setLocale(Session::get('setLanguage'));
+    }else{
+        App::setLocale('en');
+    }
+    return view('/legal/legal');
+});
+
+Route::get('/replace_language/{locale}', function ($locale) {
+   Session::put('setLanguage', $locale);
+   App::setLocale($locale);
+   return $locale;
 });
