@@ -13,7 +13,7 @@
     <div class="background">
         <div class="overlay"></div>
         <div class="content">
-            <button onclick="goBack()" class="back-button"><i class="fas fa-arrow-left"></i></button>
+            <button onclick="location.href='/'" class="back-button"><i class="fas fa-arrow-left"></i></button>
             <header class="header">
                 <h1>Legal Information</h1>
             </header>

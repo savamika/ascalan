@@ -58,6 +58,24 @@ Route::get('/user/regin', function () {
     return view('/users/regin');
 });
 
+Route::get('/admin/home', function () {
+    if (Session::has('setLanguage')){
+        App::setLocale(Session::get('setLanguage'));
+    }else{
+        App::setLocale('en');
+    }
+    return view('/admin/home');
+});
+
+Route::get('/admin/messenger', function () {
+    if (Session::has('setLanguage')){
+        App::setLocale(Session::get('setLanguage'));
+    }else{
+        App::setLocale('en');
+    }
+    return view('/admin/messenger');
+});
+
 Route::get('/legal', function () {
     if (Session::has('setLanguage')){
         App::setLocale(Session::get('setLanguage'));

@@ -6,6 +6,7 @@ return [
         "register_page" => "Registration Page",
         "user_page" => "User Page",
         "admin_page" => "Admin Page",
+        "desktop_page" => "Desktop-Messenger",
     ],
 	'description' => 'Wir sind ein Wirtschafts und Karriere Netzwerk, dessen Mitglieder sich gegenseitig unter­stützen und fördern. Es basiert auf einem Beloh­nungs­system. Umso mehr Sie dem Netzwerk helfen, umso mehr hilft es Ihnen. Registrieren Sie sich kostenlos:',
     "buttons" => [
@@ -15,6 +16,8 @@ return [
         "setting" => "Einstellungen",
         "logout" => "Ausloggen",
         "send" => "Schicken",
+        "modify" => "Ändern",
+        "save_change" => "Änderungen speichern",
     ],
     "labels" => [
         "legal_information" => "Rechtliche Informationen",
@@ -32,6 +35,7 @@ return [
         "frm_education" => "Ausbildung",
         "frm_referral_code" => "Referenzcode",
         "frm_choose_photo" => "Wähle ein Foto",
+        "frm_bonus_point" => "Bonuspunkt",
     ],
     "notif" => [
         "login_success" => "Anmeldung erfolgreich!",
@@ -44,9 +48,28 @@ return [
     ],
     "chats" => [
         "title" => "chatte mit uns!",
+        "chat_with" => "Plaudern mit",
         "cov1" => "Hallo, wie können wir Ihnen heute helfen?",
         "cov2" => "Ich brauche Hilfe mit meinem Konto.",
         "type" => "Schreiben Sie ihre Nachricht hier...",
+    ],
+    "menu" => [
+        "chatting" => "Chatten",
+        "user_profiles" => "Benutzerprofil",
+        "logout" => "Ausloggen",
+    ],
+    "menu_title" => [
+        "user_management" => "Benutzerverwaltung",
+        "search_for_user" => "Nach Benutzern suchen",
+    ],
+    "table_header" => [
+        "photo" => "FOTO",
+        "login" => "ANMELDUNG",
+        "first_name" => "VORNAME",
+        "last_name" => "NACHNAME",
+        "company" => "UNTERNEHMEN",
+        "country" => "LAND",
+        "actions" => "AKTIONEN",
     ],
 ];
 ?>

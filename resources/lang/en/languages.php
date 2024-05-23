@@ -6,6 +6,7 @@ return [
         "register_page" => "Registration Page",
         "user_page" => "User Page",
         "admin_page" => "Admin Page",
+        "desktop_page" => "Desktop Messenger",
     ],
 	'description' => 'We are an economic and career network whose members support and promote each other. It is based on a reward system. The more you help the network, the more it helps you. Register for free',
 	"buttons" => [
@@ -15,6 +16,8 @@ return [
         "setting" => "Settings",
         "logout" => "Log Out",
         "send" => "Send",
+        "modify" => "Modify",
+        "save_change" => "Save Changes",
     ],
     "labels" => [
         "legal_information" => "Legal Information",
@@ -32,6 +35,7 @@ return [
         "frm_education" => "Education",
         "frm_referral_code" => "Referral Code",
         "frm_choose_photo" => "Choose a photo",
+        "frm_bonus_point" => "Bonus Point",
     ],
     "notif" => [
         "login_success" => "Login Successful!",
@@ -44,9 +48,28 @@ return [
     ],
     "chats" => [
         "title" => "Chat with us!",
+        "chat_with" => "Chat with",
         "cov1" => "Hello, how can we help you today?",
         "cov2" => "I need help with my account.",
         "type" => "Type your message here...",
+    ],
+    "menu" => [
+        "chatting" => "Chatting",
+        "user_profiles" => "User Profiles",
+        "logout" => "Logout",
+    ],
+    "menu_title" => [
+        "user_management" => "User Management",
+        "search_for_user" => "Search for users",
+    ],
+    "table_header" => [
+        "photo" => "PHOTO",
+        "login" => "LOGIN",
+        "first_name" => "FIRST NAME",
+        "last_name" => "LAST NAME",
+        "company" => "COMPANY",
+        "country" => "COUNTRY",
+        "actions" => "ACTIONS",
     ],
 ];
 ?>
